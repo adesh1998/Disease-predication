@@ -1,0 +1,9 @@
+joblib
+psycopg2
+scikit-learn
+Django>=3.0,<4.0
+gunicorn
+django-storages
+boto3
+psycopg2-binary
+django-environ

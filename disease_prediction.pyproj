@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>disease_prediction</Name>
+    <RootNamespace>disease_prediction</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8142fbc9-b7e3-4c4c-9372-fb8a69a2e4c4</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>disease_prediction.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="accounts\admin.py" />
+    <Compile Include="accounts\apps.py" />
+    <Compile Include="accounts\migrations\__init__.py" />
+    <Compile Include="accounts\models.py" />
+    <Compile Include="accounts\tests.py" />
+    <Compile Include="accounts\urls.py" />
+    <Compile Include="accounts\views.py" />
+    <Compile Include="accounts\__init__.py" />
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="chats\admin.py" />
+    <Compile Include="chats\apps.py" />
+    <Compile Include="chats\migrations\0001_initial.py" />
+    <Compile Include="chats\migrations\0002_feedback.py" />
+    <Compile Include="chats\migrations\__init__.py" />
+    <Compile Include="chats\models.py" />
+    <Compile Include="chats\tests.py" />
+    <Compile Include="chats\urls.py" />
+    <Compile Include="chats\views.py" />
+    <Compile Include="chats\__init__.py" />
+    <Compile Include="main_app\admin.py" />
+    <Compile Include="main_app\apps.py" />
+    <Compile Include="main_app\migrations\0001_initial.py" />
+    <Compile Include="main_app\migrations\0002_rating_review.py" />
+    <Compile Include="main_app\migrations\0003_auto_20191208_2155.py" />
+    <Compile Include="main_app\migrations\0004_auto_20191209_0032.py" />
+    <Compile Include="main_app\migrations\0005_doctor_rating.py" />
+    <Compile Include="main_app\migrations\0006_remove_consultation_messages.py" />
+    <Compile Include="main_app\migrations\0007_auto_20200118_2040.py" />
+    <Compile Include="main_app\migrations\__init__.py" />
+    <Compile Include="main_app\models.py" />
+    <Compile Include="main_app\tests.py" />
+    <Compile Include="main_app\urls.py" />
+    <Compile Include="main_app\views.py" />
+    <Compile Include="main_app\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="disease_prediction\__init__.py" />
+    <Compile Include="disease_prediction\settings.py" />
+    <Compile Include="disease_prediction\urls.py" />
+    <Compile Include="disease_prediction\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="accounts\" />
+    <Folder Include="accounts\migrations\" />
+    <Folder Include="accounts\migrations\__pycache__\" />
+    <Folder Include="accounts\__pycache__\" />
+    <Folder Include="app\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="chats\" />
+    <Folder Include="chats\migrations\" />
+    <Folder Include="chats\migrations\__pycache__\" />
+    <Folder Include="chats\__pycache__\" />
+    <Folder Include="disease_prediction\" />
+    <Folder Include="disease_prediction\.vscode\" />
+    <Folder Include="disease_prediction\__pycache__\" />
+    <Folder Include="main_app\" />
+    <Folder Include="main_app\migrations\" />
+    <Folder Include="main_app\migrations\__pycache__\" />
+    <Folder Include="main_app\__pycache__\" />
+    <Folder Include="pics\" />
+    <Folder Include="templates\" />
+    <Folder Include="templates\admin\" />
+    <Folder Include="templates\admin\admin_ui\" />
+    <Folder Include="templates\admin\signin\" />
+    <Folder Include="templates\consultation\" />
+    <Folder Include="templates\doctor\" />
+    <Folder Include="templates\doctor\consultation_history\" />
+    <Folder Include="templates\doctor\doctor_ui\" />
+    <Folder Include="templates\doctor\signin_page\" />
+    <Folder Include="templates\doctor\signin_page\css\" />
+    <Folder Include="templates\doctor\signin_page\fonts\" />
+    <Folder Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\" />
+    <Folder Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\css\" />
+    <Folder Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\fonts\" />
+    <Folder Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\" />
+    <Folder Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\" />
+    <Folder Include="templates\doctor\signin_page\fonts\iconic\" />
+    <Folder Include="templates\doctor\signin_page\fonts\iconic\css\" />
+    <Folder Include="templates\doctor\signin_page\fonts\iconic\fonts\" />
+    <Folder Include="templates\doctor\signin_page\fonts\poppins\" />
+    <Folder Include="templates\doctor\signin_page\images\" />
+    <Folder Include="templates\doctor\signin_page\images\icons\" />
+    <Folder Include="templates\doctor\signin_page\js\" />
+    <Folder Include="templates\doctor\signin_page\vendor\" />
+    <Folder Include="templates\doctor\signin_page\vendor\animate\" />
+    <Folder Include="templates\doctor\signin_page\vendor\animsition\" />
+    <Folder Include="templates\doctor\signin_page\vendor\animsition\css\" />
+    <Folder Include="templates\doctor\signin_page\vendor\animsition\js\" />
+    <Folder Include="templates\doctor\signin_page\vendor\bootstrap\" />
+    <Folder Include="templates\doctor\signin_page\vendor\bootstrap\css\" />
+    <Folder Include="templates\doctor\signin_page\vendor\bootstrap\js\" />
+    <Folder Include="templates\doctor\signin_page\vendor\countdowntime\" />
+    <Folder Include="templates\doctor\signin_page\vendor\css-hamburgers\" />
+    <Folder Include="templates\doctor\signin_page\vendor\daterangepicker\" />
+    <Folder Include="templates\doctor\signin_page\vendor\jquery\" />
+    <Folder Include="templates\doctor\signin_page\vendor\perfect-scrollbar\" />
+    <Folder Include="templates\doctor\signin_page\vendor\select2\" />
+    <Folder Include="templates\doctor\signup_form\" />
+    <Folder Include="templates\doctor\view_profile\" />
+    <Folder Include="templates\homepage\" />
+    <Folder Include="templates\homepage\bootstrap\" />
+    <Folder Include="templates\homepage\bootstrap\css\" />
+    <Folder Include="templates\homepage\bootstrap\js\" />
+    <Folder Include="templates\patient\" />
+    <Folder Include="templates\patient\checkdisease\" />
+    <Folder Include="templates\patient\consultation_history\" />
+    <Folder Include="templates\patient\consult_a_doctor\" />
+    <Folder Include="templates\patient\patient_ui\" />
+    <Folder Include="templates\patient\signin_page\" />
+    <Folder Include="templates\patient\signin_page\css\" />
+    <Folder Include="templates\patient\signin_page\fonts\" />
+    <Folder Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\" />
+    <Folder Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\css\" />
+    <Folder Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\fonts\" />
+    <Folder Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\" />
+    <Folder Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\" />
+    <Folder Include="templates\patient\signin_page\fonts\iconic\" />
+    <Folder Include="templates\patient\signin_page\fonts\iconic\css\" />
+    <Folder Include="templates\patient\signin_page\fonts\iconic\fonts\" />
+    <Folder Include="templates\patient\signin_page\fonts\poppins\" />
+    <Folder Include="templates\patient\signin_page\images\" />
+    <Folder Include="templates\patient\signin_page\images\icons\" />
+    <Folder Include="templates\patient\signin_page\js\" />
+    <Folder Include="templates\patient\signin_page\vendor\" />
+    <Folder Include="templates\patient\signin_page\vendor\animate\" />
+    <Folder Include="templates\patient\signin_page\vendor\animsition\" />
+    <Folder Include="templates\patient\signin_page\vendor\animsition\css\" />
+    <Folder Include="templates\patient\signin_page\vendor\animsition\js\" />
+    <Folder Include="templates\patient\signin_page\vendor\bootstrap\" />
+    <Folder Include="templates\patient\signin_page\vendor\bootstrap\css\" />
+    <Folder Include="templates\patient\signin_page\vendor\bootstrap\js\" />
+    <Folder Include="templates\patient\signin_page\vendor\countdowntime\" />
+    <Folder Include="templates\patient\signin_page\vendor\css-hamburgers\" />
+    <Folder Include="templates\patient\signin_page\vendor\daterangepicker\" />
+    <Folder Include="templates\patient\signin_page\vendor\jquery\" />
+    <Folder Include="templates\patient\signin_page\vendor\perfect-scrollbar\" />
+    <Folder Include="templates\patient\signin_page\vendor\select2\" />
+    <Folder Include="templates\patient\signup_form\" />
+    <Folder Include="templates\patient\viewdoctor\" />
+    <Folder Include="templates\patient\viewdoctor\css\" />
+    <Folder Include="templates\patient\viewdoctor\img\" />
+    <Folder Include="templates\patient\viewdoctor\js\" />
+    <Folder Include="templates\patient\view_profile\" />
+    <Folder Include="templates\signin_page\" />
+    <Folder Include="templates\signin_page\css\" />
+    <Folder Include="templates\signin_page\fonts\" />
+    <Folder Include="templates\signin_page\fonts\font-awesome-4.7.0\" />
+    <Folder Include="templates\signin_page\fonts\font-awesome-4.7.0\css\" />
+    <Folder Include="templates\signin_page\fonts\font-awesome-4.7.0\fonts\" />
+    <Folder Include="templates\signin_page\fonts\font-awesome-4.7.0\less\" />
+    <Folder Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\" />
+    <Folder Include="templates\signin_page\fonts\iconic\" />
+    <Folder Include="templates\signin_page\fonts\iconic\css\" />
+    <Folder Include="templates\signin_page\fonts\iconic\fonts\" />
+    <Folder Include="templates\signin_page\fonts\poppins\" />
+    <Folder Include="templates\signin_page\images\" />
+    <Folder Include="templates\signin_page\images\icons\" />
+    <Folder Include="templates\signin_page\js\" />
+    <Folder Include="templates\signin_page\vendor\" />
+    <Folder Include="templates\signin_page\vendor\animate\" />
+    <Folder Include="templates\signin_page\vendor\animsition\" />
+    <Folder Include="templates\signin_page\vendor\animsition\css\" />
+    <Folder Include="templates\signin_page\vendor\animsition\js\" />
+    <Folder Include="templates\signin_page\vendor\bootstrap\" />
+    <Folder Include="templates\signin_page\vendor\bootstrap\css\" />
+    <Folder Include="templates\signin_page\vendor\bootstrap\js\" />
+    <Folder Include="templates\signin_page\vendor\countdowntime\" />
+    <Folder Include="templates\signin_page\vendor\css-hamburgers\" />
+    <Folder Include="templates\signin_page\vendor\daterangepicker\" />
+    <Folder Include="templates\signin_page\vendor\jquery\" />
+    <Folder Include="templates\signin_page\vendor\perfect-scrollbar\" />
+    <Folder Include="templates\signin_page\vendor\select2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="accounts\migrations\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="accounts\__pycache__\admin.cpython-37.pyc" />
+    <Content Include="accounts\__pycache__\apps.cpython-37.pyc" />
+    <Content Include="accounts\__pycache__\models.cpython-37.pyc" />
+    <Content Include="accounts\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="accounts\__pycache__\views.cpython-37.pyc" />
+    <Content Include="accounts\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="chats\migrations\__pycache__\0001_initial.cpython-37.pyc" />
+    <Content Include="chats\migrations\__pycache__\0002_feedback.cpython-37.pyc" />
+    <Content Include="chats\migrations\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="chats\__pycache__\admin.cpython-37.pyc" />
+    <Content Include="chats\__pycache__\apps.cpython-37.pyc" />
+    <Content Include="chats\__pycache__\models.cpython-37.pyc" />
+    <Content Include="chats\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="chats\__pycache__\views.cpython-37.pyc" />
+    <Content Include="chats\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="disease_prediction\.vscode\settings.json" />
+    <Content Include="disease_prediction\__pycache__\settings.cpython-37.pyc" />
+    <Content Include="disease_prediction\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="disease_prediction\__pycache__\wsgi.cpython-37.pyc" />
+    <Content Include="disease_prediction\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0001_initial.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0002_auto_20191029_2038.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0002_auto_20191029_2105.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0002_auto_20191126_1746.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0002_diseaseinfo_consultdoctor.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0002_rating_review.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0003_auto_20191125_1845.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0003_auto_20191126_1819.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0003_auto_20191208_2155.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0003_remove_patient_email.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0004_auto_20191106_0008.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0004_auto_20191125_1856.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0004_auto_20191209_0032.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0005_auto_20191106_0024.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0005_auto_20191125_1858.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0005_doctor_rating.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0006_remove_consultation_messages.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\0007_auto_20200118_2040.cpython-37.pyc" />
+    <Content Include="main_app\migrations\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="main_app\__pycache__\admin.cpython-37.pyc" />
+    <Content Include="main_app\__pycache__\apps.cpython-37.pyc" />
+    <Content Include="main_app\__pycache__\models.cpython-37.pyc" />
+    <Content Include="main_app\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="main_app\__pycache__\views.cpython-37.pyc" />
+    <Content Include="main_app\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="pics\default.PNG" />
+    <Content Include="pics\patient.PNG" />
+    <Content Include="pics\patient_gecHsba.PNG" />
+    <Content Include="pics\patient_I3Vq8TX.PNG" />
+    <Content Include="pics\profile.PNG" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="app\static\app\content\bootstrap.css" />
+    <Content Include="app\static\app\content\bootstrap.min.css" />
+    <Content Include="app\static\app\content\site.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="app\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\static\app\scripts\respond.js" />
+    <Content Include="app\static\app\scripts\respond.min.js" />
+    <Content Include="app\static\app\scripts\_references.js" />
+    <Content Include="app\templates\app\about.html" />
+    <Content Include="app\templates\app\contact.html" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\layout.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="templates\admin\admin_ui\admin_ui.html" />
+    <Content Include="templates\admin\signin\admin.png" />
+    <Content Include="templates\admin\signin\signin.html" />
+    <Content Include="templates\basic.html" />
+    <Content Include="templates\consultation\chat_body.html" />
+    <Content Include="templates\consultation\consultation.css" />
+    <Content Include="templates\consultation\consultation.html" />
+    <Content Include="templates\doctor\consultation_history\consultation_history.html" />
+    <Content Include="templates\doctor\doctor_ui\cover.jpeg" />
+    <Content Include="templates\doctor\doctor_ui\prof.css" />
+    <Content Include="templates\doctor\doctor_ui\profile.html" />
+    <Content Include="templates\doctor\doctor_ui\profile.PNG" />
+    <Content Include="templates\doctor\signin_page\css\main.css" />
+    <Content Include="templates\doctor\signin_page\css\util.css" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="templates\doctor\signin_page\fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="templates\doctor\signin_page\fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="templates\doctor\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="templates\doctor\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="templates\doctor\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="templates\doctor\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="templates\doctor\signin_page\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="templates\doctor\signin_page\images\bg-01.jpg" />
+    <Content Include="templates\doctor\signin_page\images\icons\bg-01.jpg" />
+    <Content Include="templates\doctor\signin_page\images\icons\favicon.ico" />
+    <Content Include="templates\doctor\signin_page\images\icons\timthumb.jpg" />
+    <Content Include="templates\doctor\signin_page\images\timthumb.jpg" />
+    <Content Include="templates\doctor\signin_page\index.html" />
+    <Content Include="templates\doctor\signin_page\js\main.js" />
+    <Content Include="templates\doctor\signin_page\vendor\animate\animate.css" />
+    <Content Include="templates\doctor\signin_page\vendor\animsition\css\animsition.css" />
+    <Content Include="templates\doctor\signin_page\vendor\animsition\css\animsition.min.css" />
+    <Content Include="templates\doctor\signin_page\vendor\animsition\js\animsition.js" />
+    <Content Include="templates\doctor\signin_page\vendor\animsition\js\animsition.min.js" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\js\popper.js" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="templates\doctor\signin_page\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="templates\doctor\signin_page\vendor\countdowntime\countdowntime.js" />
+    <Content Include="templates\doctor\signin_page\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="templates\doctor\signin_page\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="templates\doctor\signin_page\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="templates\doctor\signin_page\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="templates\doctor\signin_page\vendor\daterangepicker\moment.js" />
+    <Content Include="templates\doctor\signin_page\vendor\daterangepicker\moment.min.js" />
+    <Content Include="templates\doctor\signin_page\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="templates\doctor\signin_page\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="templates\doctor\signin_page\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="templates\doctor\signin_page\vendor\select2\select2.css" />
+    <Content Include="templates\doctor\signin_page\vendor\select2\select2.js" />
+    <Content Include="templates\doctor\signin_page\vendor\select2\select2.min.css" />
+    <Content Include="templates\doctor\signin_page\vendor\select2\select2.min.js" />
+    <Content Include="templates\doctor\signup_form\signup.css" />
+    <Content Include="templates\doctor\signup_form\signup.html" />
+    <Content Include="templates\doctor\view_profile\base.css" />
+    <Content Include="templates\doctor\view_profile\forms.css" />
+    <Content Include="templates\doctor\view_profile\responsive.css" />
+    <Content Include="templates\doctor\view_profile\view_profile.html" />
+    <Content Include="templates\homepage\admin.PNG" />
+    <Content Include="templates\homepage\background.jpg" />
+    <Content Include="templates\homepage\bgimg.jpg" />
+    <Content Include="templates\homepage\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="templates\homepage\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="templates\homepage\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="templates\homepage\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="templates\homepage\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="templates\homepage\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="templates\homepage\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="templates\homepage\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="templates\homepage\bootstrap\css\bootstrap.css" />
+    <Content Include="templates\homepage\bootstrap\css\bootstrap.css.map" />
+    <Content Include="templates\homepage\bootstrap\css\bootstrap.min.css" />
+    <Content Include="templates\homepage\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="templates\homepage\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="templates\homepage\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="templates\homepage\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="templates\homepage\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="templates\homepage\bootstrap\js\bootstrap.js" />
+    <Content Include="templates\homepage\bootstrap\js\bootstrap.js.map" />
+    <Content Include="templates\homepage\bootstrap\js\bootstrap.min.js" />
+    <Content Include="templates\homepage\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="templates\homepage\c31.jpg" />
+    <Content Include="templates\homepage\c41.jpg" />
+    <Content Include="templates\homepage\css.css" />
+    <Content Include="templates\homepage\doctor.PNG" />
+    <Content Include="templates\homepage\gray.jpg" />
+    <Content Include="templates\homepage\index.html" />
+    <Content Include="templates\homepage\old.jpg" />
+    <Content Include="templates\homepage\patient.PNG" />
+    <Content Include="templates\homepage\s72.jpg" />
+    <Content Include="templates\jquery.js" />
+    <Content Include="templates\logo.PNG" />
+    <Content Include="templates\patient\checkdisease\checkdisease.html" />
+    <Content Include="templates\patient\checkdisease\dps.css" />
+    <Content Include="templates\patient\consultation_history\consultation_history.html" />
+    <Content Include="templates\patient\consult_a_doctor\consult_a_doctor.css" />
+    <Content Include="templates\patient\consult_a_doctor\consult_a_doctor.html" />
+    <Content Include="templates\patient\patient_ui\cover.jpeg" />
+    <Content Include="templates\patient\patient_ui\prof.css" />
+    <Content Include="templates\patient\patient_ui\profile.html" />
+    <Content Include="templates\patient\patient_ui\profile.PNG" />
+    <Content Include="templates\patient\signin_page\css\main.css" />
+    <Content Include="templates\patient\signin_page\css\util.css" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="templates\patient\signin_page\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="templates\patient\signin_page\fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="templates\patient\signin_page\fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="templates\patient\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="templates\patient\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="templates\patient\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="templates\patient\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="templates\patient\signin_page\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="templates\patient\signin_page\images\bg-01.jpg" />
+    <Content Include="templates\patient\signin_page\images\icons\bg-01.jpg" />
+    <Content Include="templates\patient\signin_page\images\icons\favicon.ico" />
+    <Content Include="templates\patient\signin_page\images\icons\timthumb.jpg" />
+    <Content Include="templates\patient\signin_page\images\timthumb.jpg" />
+    <Content Include="templates\patient\signin_page\index.html" />
+    <Content Include="templates\patient\signin_page\js\main.js" />
+    <Content Include="templates\patient\signin_page\vendor\animate\animate.css" />
+    <Content Include="templates\patient\signin_page\vendor\animsition\css\animsition.css" />
+    <Content Include="templates\patient\signin_page\vendor\animsition\css\animsition.min.css" />
+    <Content Include="templates\patient\signin_page\vendor\animsition\js\animsition.js" />
+    <Content Include="templates\patient\signin_page\vendor\animsition\js\animsition.min.js" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\js\popper.js" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="templates\patient\signin_page\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="templates\patient\signin_page\vendor\countdowntime\countdowntime.js" />
+    <Content Include="templates\patient\signin_page\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="templates\patient\signin_page\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="templates\patient\signin_page\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="templates\patient\signin_page\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="templates\patient\signin_page\vendor\daterangepicker\moment.js" />
+    <Content Include="templates\patient\signin_page\vendor\daterangepicker\moment.min.js" />
+    <Content Include="templates\patient\signin_page\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="templates\patient\signin_page\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="templates\patient\signin_page\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="templates\patient\signin_page\vendor\select2\select2.css" />
+    <Content Include="templates\patient\signin_page\vendor\select2\select2.js" />
+    <Content Include="templates\patient\signin_page\vendor\select2\select2.min.css" />
+    <Content Include="templates\patient\signin_page\vendor\select2\select2.min.js" />
+    <Content Include="templates\patient\signup_form\signup.css" />
+    <Content Include="templates\patient\signup_form\signup.html" />
+    <Content Include="templates\patient\viewdoctor\css\style.css" />
+    <Content Include="templates\patient\viewdoctor\img\c172.jpg" />
+    <Content Include="templates\patient\viewdoctor\img\c31.jpg" />
+    <Content Include="templates\patient\viewdoctor\img\c41.jpg" />
+    <Content Include="templates\patient\viewdoctor\img\c94.jpg" />
+    <Content Include="templates\patient\viewdoctor\img\s62.jpg" />
+    <Content Include="templates\patient\viewdoctor\img\s72.jpg" />
+    <Content Include="templates\patient\viewdoctor\img\s83.jpg" />
+    <Content Include="templates\patient\viewdoctor\index.html" />
+    <Content Include="templates\patient\viewdoctor\js\jquery.js" />
+    <Content Include="templates\patient\view_profile\base.css" />
+    <Content Include="templates\patient\view_profile\forms.css" />
+    <Content Include="templates\patient\view_profile\responsive.css" />
+    <Content Include="templates\patient\view_profile\view_profile.html" />
+    <Content Include="templates\signin_page\css\main.css" />
+    <Content Include="templates\signin_page\css\util.css" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="templates\signin_page\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="templates\signin_page\fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="templates\signin_page\fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="templates\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="templates\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="templates\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="templates\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="templates\signin_page\fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="templates\signin_page\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="templates\signin_page\images\bg-01.jpg" />
+    <Content Include="templates\signin_page\images\icons\bg-01.jpg" />
+    <Content Include="templates\signin_page\images\icons\favicon.ico" />
+    <Content Include="templates\signin_page\images\icons\timthumb.jpg" />
+    <Content Include="templates\signin_page\images\timthumb.jpg" />
+    <Content Include="templates\signin_page\index.html" />
+    <Content Include="templates\signin_page\js\main.js" />
+    <Content Include="templates\signin_page\vendor\animate\animate.css" />
+    <Content Include="templates\signin_page\vendor\animsition\css\animsition.css" />
+    <Content Include="templates\signin_page\vendor\animsition\css\animsition.min.css" />
+    <Content Include="templates\signin_page\vendor\animsition\js\animsition.js" />
+    <Content Include="templates\signin_page\vendor\animsition\js\animsition.min.js" />
+    <Content Include="templates\signin_page\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="templates\signin_page\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="templates\signin_page\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="templates\signin_page\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="templates\signin_page\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="templates\signin_page\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="templates\signin_page\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="templates\signin_page\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="templates\signin_page\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="templates\signin_page\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="templates\signin_page\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="templates\signin_page\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="templates\signin_page\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="templates\signin_page\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="templates\signin_page\vendor\bootstrap\js\popper.js" />
+    <Content Include="templates\signin_page\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="templates\signin_page\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="templates\signin_page\vendor\countdowntime\countdowntime.js" />
+    <Content Include="templates\signin_page\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="templates\signin_page\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="templates\signin_page\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="templates\signin_page\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="templates\signin_page\vendor\daterangepicker\moment.js" />
+    <Content Include="templates\signin_page\vendor\daterangepicker\moment.min.js" />
+    <Content Include="templates\signin_page\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="templates\signin_page\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="templates\signin_page\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="templates\signin_page\vendor\select2\select2.css" />
+    <Content Include="templates\signin_page\vendor\select2\select2.js" />
+    <Content Include="templates\signin_page\vendor\select2\select2.min.css" />
+    <Content Include="templates\signin_page\vendor\select2\select2.min.js" />
+    <Content Include="trained_model" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
