@@ -140,6 +140,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Add 'storages' to INSTALLED_APPS
 INSTALLED_APPS += ['storages']
+SESSION_COOKIE_SECURE = True
 
 # # AWS Settings
 # AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
