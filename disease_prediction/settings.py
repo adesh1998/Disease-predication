@@ -31,7 +31,7 @@ print("SECRET_KEY loaded:", SECRET_KEY)
 DEBUG = True
 
 # Update ALLOWED_HOSTS with your domain and EC2 IP
-ALLOWED_HOSTS = ['34.234.129.23','localhost']
+ALLOWED_HOSTS = ['18.221.123.113','localhost']
 
 # Application definition
 
@@ -131,8 +131,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 # Media files
 MEDIA_URL = '/media/'
