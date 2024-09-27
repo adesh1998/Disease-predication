@@ -28,7 +28,7 @@ SECRET_KEY = env('SECRET_KEY')
 print("SECRET_KEY loaded:", SECRET_KEY)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Update ALLOWED_HOSTS with your domain and EC2 IP
 ALLOWED_HOSTS = ['18.221.123.113','localhost']
